@@ -49,7 +49,7 @@
             </div>
         </nav>
             <div class="container my-5 seccionContactanos py-5 bg-dark text-white px-5" style="border-radius: 45px;">
-                <form role="form"  method="post">
+                <form action="https://formsubmit.co/bigotesseptiembre@gmail.com" role="form"  method="post">
                    <div class="row justify-content-center">
                     <div class="col-md-8">
                         <h1 class="text-center ">Contactanos</h1>
@@ -57,22 +57,23 @@
                         <div class="row">
                             <div class="form-group  pt-3 col-md-6">
                                 <label class="form-label text-left" for="nombre">Nombre:</label>
-                                <input class="form-control" type="text" name="nombre" id="nombre">
+                                <input class="form-control" type="text" name="nombre" id="nombre" required>
                             </div>
                             <div class="form-group  pt-3 col-md-6">
                                 <label class="form-label" for="email">Email:</label>
-                                <input class="form-control" type="email" name="email" id="email">
+                                <input class="form-control" type="email" name="email" id="email" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group  pt-3 col-md-12"> 
                                 <label class="form-label" for="mensaje">Mensaje:</label>                 
-                               <textarea class="form-control" name="mensaje" id="" cols="30" rows="10"></textarea>
+                               <textarea class="form-control" name="mensaje" id="" cols="30" rows="10" required></textarea>
                             </div>
                         </div>
                         <div class="text-center">
                             <div class="pb-3 py-4 ">
-                                <input  class="btn btn-warning btn-lg" style="border-radius: 20px;width: 50%;" type="button" value="Enviar">   
+                                <!--<input  class="btn btn-warning btn-lg" style="border-radius: 20px;width: 50%;" type="submit" value="Enviar">-->
+                                <button class="btn btn-warning btn-lg" style="border-radius: 20px;width: 50%;" type="submit">Enviar</button>   
                             </div>
                         </div>
                                               

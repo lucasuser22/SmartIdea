@@ -121,3 +121,7 @@ ul b{
         margin: 75px;
     }
 }
+
+#destino {
+    opacity: 0;
+}

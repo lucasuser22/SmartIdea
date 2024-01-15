@@ -1,0 +1,117 @@
+.nav-link-yellow {
+    color: #FED600;
+}
+
+.nav-link-yellow:hover {
+    color: #F4F4F2;
+}
+
+.nav-link-white {
+    color: #fff;
+}
+
+.nav-link-white:hover {
+    color: #F4F4F2;
+}
+
+.nav-link-black {
+    color: white;
+}
+.nav-link-black:hover {
+    color: #FED600;
+}
+
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #2C3333;
+}
+
+.icono-grande {
+    font-size: 4em;
+}
+.icono-peque {
+    font-size: 2em;
+}
+
+#nosotros {
+    background-color: #212428;
+}
+
+.card-body {
+    display: flex; /* establece el contenedor "card-body" como un contenedor flex */
+    justify-content: center; /* centra el contenido horizontalmente */
+    align-items: center; /* centra el contenido verticalmente */
+    flex-direction: column
+ }
+ .circle {
+    width: 100px; /* ajusta el tamaño del círculo según sea necesario */
+    height: 100px;
+    display: flex; /* establece el elemento "circle" como un contenedor flex */
+    justify-content: center; /* centra el contenido horizontalmente */
+    align-items: center; /* centra el contenido verticalmente */
+    border-radius: 50%; /* convierte el elemento en un círculo */
+    background-color: #FED600; /* establece el color de fondo */
+  }
+
+  .nav-item.active .nav-link {
+    color: black;
+    background-color: #FED600;
+  }
+  .card-title{
+    color: #FED600;
+  }
+  .card-text{
+    color: white;
+    text-align: justify;
+  }
+.divImagen{
+    width: 85%;
+    border-radius: 50%;
+}
+ul{
+    list-style-type:square;
+}
+ul b{
+    color: #FED600;
+}
+.githubAccount:link, .githubAccount:visited, .githubAccount:active {
+    text-decoration:none;
+    color: #F4F4F2;
+}
+.servicios {
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ /* .carousel-item img {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel {
+    padding: 0 10%;
+    margin-bottom: 2rem;
+} */
+.card-height {
+    height: 700px; 
+  }
+  
+  .margen-superior {
+    margin-top: 30px;
+}
+/* .card-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    flex-basis: 30%;
+    margin: 0 10px;
+  }
+   */
+.margin{
+    margin-top: 5%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 5%;
+}

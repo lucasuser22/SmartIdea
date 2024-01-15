@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Servicios - Smart Idea</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="https://smartidea-api.000webhostapp.com/images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #2C3333;">
+        <div class="container-fluid">
+            <img src="assets/img/logon.png" alt="" height="50px" width="60px">
+            <a class="navbar-brand nav-link-yellow mx-2" href="index.html">Smart Idea</a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon my-toggler" >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+                    <path stroke="#FED600" style="height: 3px;" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/>
+                </svg></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link nav-link-white" href="index.html">Home</a>
+                    <a class="nav-link nav-link-white" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link nav-link-yellow" href="servicios.html">Servicios</a>
+                    <a class="nav-link nav-link-white" href="colaboradores.html">Desarrolladores</a>
+                    <a class="nav-link nav-link-white" href="contactanos.html">Contactanos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="nosotros">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 my-4 text-center">
+                    <p class="margen-superior" style="color: white; text-align: center;">¿Quieres saber mas sobre Smart Idea?</p>
+                    <a type="button" href="nuestrot.html" class="btn btn-outline-warning">Conoce Nuestro Trabajo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="servicios my-4">
+        <div class="mx-4">
+            <h4 style="text-align: center; color: #FED600;" class="my-4">Nuestros Servicios</h4>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card bg-dark card-height">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="bi bi-receipt icono-peque"></i>
+                              </div>  
+                            <h6 class="card-title my-3" style="color: white;">Sistema de Facturación</h6>
+
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">El sistema de facturación desarrollado en C# y con SQL Server como gestor de base de datos automatiza la gestión de facturas, controla el inventario y registra transacciones. Es personalizable, fácil de usar, de alta calidad y seguridad.<p>
+                            <h6 style="color: #FED600;">Bueno para:</h6>
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Pequeñas Empresas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark card-height">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="bi bi-basket2-fill icono-peque"></i>
+                              </div>  
+                            <h6 class="card-title my-3" style="color: white;">E-commerce ASP.Net core</h6>
+                            
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Ofrecemos una solución completa de comercio electrónico en C# ASP.NET con pasarela de pago en PayPal y base de datos en SQL Server, alojado en la nube de Azure. Ofrece seguridad, confiabilidad y una interfaz intuitiva para administrar productos, promociones y pedidos, además de la integración de PayPal para pagos seguros y convenientes.<p>
+                            <h6 style="color: #FED600;">Bueno para:</h6>
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Medianas Empresas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark card-height">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="bi bi-cart-dash icono-peque"></i>
+                              </div>  
+                            <h6 class="card-title my-3" style="color: white;">E-commerce PHP</h6>
+                            
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Si está buscando expandir su negocio en línea y mejorar la gestión de pedidos e inventario en múltiples sucursales, tenemos la solución perfecta para usted. Presentamos nuestro sistema de ecommerce desarrollado en PHP con MySQL, HTML, CSS, JS y Bootstrap, diseñado especialmente para empresas que buscan una plataforma personalizable, escalable y fácil de usar.<p>
+                            <h6 style="color: #FED600;">Bueno para:</h6>
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Medianas y Grandes Empresas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark card-height">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="bi bi-phone icono-peque"></i>
+                              </div>  
+                            <h6 class="card-title my-3" style="color: white;">Aplicaciones Hibridas en React Native</h6>
+                            
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">React Native y Firebase son una combinación ideal para desarrollar aplicaciones móviles de alta calidad.Las aplicaciones móviles desarrolladas con React Native y Firebase incluyen compras en línea, seguimiento de fitness, delivery y turismo. Además, la comunidad de desarrolladores y la documentación en línea hacen que el proceso de desarrollo sea más fácil y eficiente.<p>
+                            <h6 style="color: #FED600;">Bueno para:</h6>
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Emprendedores</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark card-height">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="bi bi-archive icono-peque"></i>
+                              </div>  
+                            <h6 class="card-title my-3" style="color: white;">Sistema de Inventario en entorno Web</h6>
+                            
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Los sistemas de inventario en entorno web son una solución práctica y eficiente para llevar un control detallado de los productos de su empresa. Utilizando tecnologías como HTML, CSS, JS, Bootstrap y MySQL, es posible crear un sistema de inventario personalizado y adaptado a las necesidades específicas de su negocio. Estos sistemas permiten realizar un seguimiento en tiempo real del inventario, generar informes de ventas y manejar las compras y los proveedores de manera eficiente.<p>
+                            <h6 style="color: #FED600;">Bueno para:</h6>
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Emprendedores y micro empresas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark card-height">
+                        <div class="card-body">
+                            <div class="circle">
+                                <i class="bi bi-globe icono-peque"></i>
+                              </div>  
+                            <h6 class="card-title my-3" style="color: white;">Sistios Web Informativos</h6>
+                            
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Si buscas una presencia en línea sólida y profesional para tu negocio o proyecto, no busques más allá del desarrollo de sitios web informativos con HTML, CSS, JS y Bootstrap. Con estas tecnologías líderes en la industria, podemos crear para ti un sitio web elegante, fácil de navegar y totalmente personalizado que represente adecuadamente tu marca y te ayude a alcanzar tus objetivos en línea.<p>
+                            <h6 style="color: #FED600;">Bueno para:</h6>
+                            <p class="my-3" style="color: white; font-size: small; text-align: center;">Emprendedores y micro empresas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

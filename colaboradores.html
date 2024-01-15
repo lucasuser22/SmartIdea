@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="https://smartidea-api.000webhostapp.com/images/icon.png">
+    <title>Colaboradores - Smart Idea</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #2C3333;">
+        <div class="container-fluid">
+            <img src="assets/img/logon.png" alt="" height="50px" width="60px">
+            <a class="navbar-brand nav-link-yellow mx-2" href="index.html">Smart Idea</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon my-toggler">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+                        <path stroke="#FED600" style="height: 3px;" stroke-linecap="round" stroke-miterlimit="10"
+                            stroke-width="2" d="M4 7h22M4 15h22M4 23h22" />
+                    </svg></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link nav-link-white" href="index.html">Home</a>
+                    <a class="nav-link nav-link-white" href="nosotros.html">Nosotros</a>
+                    <a class="nav-link nav-link-white" href="servicios.html">Servicios</a>
+                    <a class="nav-link nav-link-yellow" href="colaboradores.html">Desarrolladores</a>
+                    <a class="nav-link nav-link-white" href="contactanos.html">Contactanos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="card text-center mx-3 my-4 bg-dark">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-black" aria-current="true" href="#"
+                        onclick="changeContent('content4'); setActiveNav(this)">Gissela</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-black" aria-current="true" href="#"
+                        onclick="changeContent('content5'); setActiveNav(this)">Jeanluca</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body" id="card-body">
+            <h3 class="card-title">Smart Idea</h3>
+            <p class="card-text py-4 text-center">
+                Ven y conoce un poco más sobre el equipo de desarrollo detrás los servicios que proporcionamos, los
+                proyectos entregados</br>
+                y los cargos que cada uno ejerce, además de sus capacidades y el historial de proyectos realizados.
+            </p>
+        </div>
+        <a href="http://" target="_blank" rel="noopener noreferrer"></a>
+    </div>
+    <script>
+        function setActiveNav(navLink) {
+            // remove "active" class from all nav items
+            var navItems = document.getElementsByClassName("nav-item");
+            for (var i = 0; i < navItems.length; i++) {
+                navItems[i].classList.remove("active");
+            }
+            // add "active" class to clicked nav item
+            navLink.parentNode.classList.add("active");
+        }
+
+        function changeContent(content) {
+            var cardBody = document.getElementById("card-body");
+            switch (content) {
+                case "content4":
+                    cardBody.innerHTML =
+                        "<div class='row px-5'>" +
+                        "<h2 class='card-title'>Gissela Serrano</h2>" +
+                        "<div class='col-md-9 card-text'>" +
+                        "<p class=' card-text py-3'>Mi nombre es Gissela Verenice Serrano Lopez, agresada de Ingenieria en Ciencias de la Computación en la Univerisdad Don Bosco, desarrolladora web frontend y backend, deasarrolladora de aplicaciones moviles</p>" +
+                        "<p class=' card-text py-1'>Durante mi desarrollo académico y profesional he adquirido habilidades y conocimientos en diversas herramientas de programación como HTML, CSS, JavaScript, Bootstrap, React JS, React Native, PHP, SQL, entre otras. Estas habilidades me han permitido desarrollar proyectos innovadores y eficientes.</p>" +
+                        "<p class='card-text titlePortafolio'><b>Portafolio de proyectos:</b></p>" +
+                        "<div class='row card-text'>" +
+                        "<div class='col-md-6'>" +
+                        "<ul class='card-text'>" +
+                        "<li><b>Diversión al aprender</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>" +
+                        "<li><b>Sistema de facturación amigos (SFA)</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>" +
+                        "<li><b>Sistema de control de empleados (SCE)</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>" +
+                        "<li><b>JOGIWISUBY: Website para una floristería</b><br> Desarrollado utilizando HTML, CSS Y JS</li><br>" +
+                        "</ul>" +
+                        "</div>" +
+                        "<div class='col-md-6'>" +
+                        "<ul class='card-text'>" +
+                        "<li><b>Analizador Léxico y Sintáctico</b><br> Desarrollado utilizando  Forms, Jflex, y Java</li><br>" +
+                        "<li><b>mioPharma (Ecommerce)</b><br> Desarrollado utilizando  C#, Bootstrap y ASP.net Core MVC 5</li><br>" +
+                        "<li><b>Sumersa (Ecommerce)</b><br> Desarrollado utilizando PHP, Bootstrap y MySQL</li><br>" +
+                        "<li><b>Progress-mind: Aplicación de aprendizaje</b><br> Desarrollado utilizando  React Native, Node JS y Firebase</li><br>" +
+                        "</ul>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "<div class='col-md-3'>" +
+                        "<img src='https://smartidea-api.000webhostapp.com/images/gissela-dev.jpg' alt='developer-gissela' class='img-fluid start-float divImagen py-4 my-4'>" +
+                        "</div>" +
+                        "<div class='py-4'>" +
+                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Project Manager y Desarrolladora</p>" +
+                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/Gissela25' class='githubAccount' target='_blank'>Gissela25</a></p>"
+                        + "</div>" +
+                        "</div>";
+                    break;
+                case "content5":
+                    cardBody.innerHTML =
+                        "<div class='row px-5'>" +
+                        "<h2 class='card-title'>Jeanluca Flores</h2>" +
+                        "<div class='col-md-9 card-text'>" +
+                        "<p class=' card-text py-4'>Mi nombre es Jeanluca Chaves Flores, me encuentro en la recta final de mi carrera de Ingenieria en Ciencias de la Computación en la Universidad Don Bosco, desarrollador web Frontend y analista de datos, con multiples conocimientos en el area de base de datos " +
+                            "<p class=' card-text py-1'>Durante mi desarrollo académico y profesional he adquirido habilidades y conocimientos en diversas herramientas de programación como HTML, CSS, JavaScript, Bootstrap, React JS, React Native, PHP, SQL, entre otras. Estas habilidades me han permitido desarrollar proyectos innovadores y eficientes.</p>" +
+                        "<div class='row card-text'>" +
+                        "<div class='col-md-6'>" +
+                        "<ul class='card-text'>" +
+                        "<li><b>Sistema de inventariado</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>" +
+                        "<li><b>Sistema de facturación amigos (SFA)</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>" +
+                        "<li><b>TRUCKDASH</b><br> Desarrollado utilizando  Windows Forms, C# y SQL Server</li><br>" +
+                        "<li><b>JOGIWISUBY: Website para una floristería</b><br> Desarrollado utilizando HTML, CSS Y JS</li><br>" +
+                        "</ul>" +
+                        "</div>" +
+                        "<div class='col-md-6'>" +
+                        "<ul class='card-text'>" +
+                        "<li><b>mioPharma (Ecommerce)</b><br> Desarrollado utilizando  C#, Bootstrap y ASP.net Core MVC 5</li><br>" +
+                        "<li><b>Sumersa (Ecommerce)</b><br> Desarrollado utilizando PHP, Bootstrap y MySQL</li><br>" +
+                        "<li><b>Progress-mind: Aplicación de aprendizaje</b><br> Desarrollado utilizando  React Native, Node JS y Firebase</li><br>" +
+                        "</ul>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "<div class='col-md-3'>" +
+                        "<img src='assets/img/lucas.jpeg' alt='developer-lucas' class='img-fluid start-float divImagen py-4 my-4'>" +
+                        "</div>" +
+                        "<div class='py-4'>" +
+                        "<p class='card-text'><b class='card-title'>Cargo en el equipo:</b> Diseñador de interfaz gráfica y  Administrador de base de datos</p>" +
+                        "<p class='card-text'><b class='card-title'>Cuenta de Github: </b><a href='https://github.com/lucasuser22' class='githubAccount' target='_blank'>lucasuser22</a></p>" +
+                        "</div>" +
+                        "</div>";
+                    break;
+                default:
+                    break;
+            }
+            
+        }
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

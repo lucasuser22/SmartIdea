@@ -125,3 +125,30 @@ ul b{
 #destino {
     opacity: 0;
 }
+
+/* CSS dentro de tu estilo existente */
+.whatsapp-container {
+    position: fixed;
+    top: 20%; /* Ajusta la posición vertical según porcentaje */
+    left: 90%; /* Ajusta la posición horizontal según porcentaje */
+    transform: translate(-100%, 0); /* Ajusta la posición en relación al propio ancho del contenedor */
+    z-index: 1000; 
+}
+
+.whatsapp-container a {
+    color: #FED600; 
+    font-size: 4vw; /* Ajusta el tamaño del icono en relación con el ancho de la pantalla */
+}
+
+/* Añade estas reglas para hacerlo más responsive */
+@media (max-width: 767px) {
+    .whatsapp-container {
+        top: 90%; /* Ajusta la posición vertical en pantallas pequeñas */
+        left: 50%; /* Ajusta la posición horizontal en pantallas pequeñas */
+        transform: translate(-50%, 0); /* Ajusta la posición en relación al propio ancho del contenedor */
+    }
+
+    .whatsapp-container a {
+        font-size: 8vw; /* Ajusta el tamaño del icono en pantallas pequeñas */
+    }
+}
